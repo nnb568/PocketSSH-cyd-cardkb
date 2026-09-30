@@ -2,7 +2,7 @@
 set(SOURCES
     "deck_base.cpp"
     "battery_measurement.cpp"
-    "c3_keyboard.cpp"
+    "cardkb_keyboard.cpp"
     "ssh_terminal.cpp"
     "lvgl_pepboy_img/pepboy_0.c"
     "lvgl_pepboy_img/pepboy_1.c"
@@ -24,7 +24,8 @@ set(INCLUDE_DIRS
 set(REQUIRED_COMPONENTS
     lvgl
     nvs_flash
-    esp_lcd_touch_gt911
+    esp_lcd_ili9341
+    esp_lcd_touch_xpt2046
     fatfs
     sdmmc
     esp_wifi
